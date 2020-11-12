@@ -1,0 +1,46 @@
+/* GENERAL SELECTORS  */
+
+body {
+    color: #ffffff;
+    background-color: #161616;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+a:active {
+    color: #ffffff;
+}
+
+/* CLASSES */
+
+.nav-link {
+    padding: 1.5vh;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+
+.nav-link:hover {
+    color: #616161;
+}
+/* IDS */
+
+/* FONTS */
+
+/* OTHER */
