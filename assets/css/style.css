@@ -26,7 +26,7 @@ a:active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: vgasys;
     font-weight: bold;
 }
 
@@ -71,8 +71,8 @@ p {
     display: block;
     margin: auto;
     display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+    height: 75%;
+    padding-top: 15px;
 }
 
 /* Body */
@@ -88,6 +88,12 @@ p {
 @font-face {
     font-family: ok;
     src: url(../../assets/fonts/ok.ttf);
+}
+
+/* Header font "" */
+@font-face {
+    font-family: vgasys;
+    src: url(../../assets/fonts/vgasys.otf);
 }
 
 /* OTHER */
