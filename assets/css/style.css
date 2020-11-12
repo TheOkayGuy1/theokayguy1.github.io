@@ -60,6 +60,14 @@ p {
     color: #414141;
 }
 
+.nav-link:visited {
+    color: #292929;
+}
+
+.nav-link:active {
+    color: #414141;
+}
+
 .logo-box {
     background-color: #ffffff;
     width: 100%;
