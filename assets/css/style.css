@@ -87,6 +87,22 @@ p {
     padding-top: 15px;
 }
 
+/* Portfolio Content Container */
+.portfolio-content {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Portfolio Display Boxes */
+.display-box {
+    width: 28vw;
+    height: 28vw;
+    border: 2px solid red;
+    clip-path: border-box;
+    float: left;
+    margin: 1.5%;
+}
+
 /* Body */
 .wrapper {
     visibility: visible;
@@ -101,5 +117,20 @@ p {
     font-family: ok;
     src: url(../../assets/fonts/ok.ttf);
 }
+
+/* RWD */
+
+/* Smaller Portfolio Page (Mobile) */
+@media screen and (max-width: 481px) {
+    .display-box {
+        width: 80vw;
+        height: 80vw;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-left: 9vw;
+        float: none;
+    }
+}
+
 
 /* OTHER */
