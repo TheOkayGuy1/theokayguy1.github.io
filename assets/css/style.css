@@ -59,12 +59,20 @@ p {
 .logo-box {
     background-color: #ffffff;
     width: 100%;
-    height: 80px;
+    height: 120px;
     margin-top: 20px;
     margin-bottom: 30px;
     border-top: 20px solid #1e1e1e;
     border-bottom: 20px solid #1e1e1e;
     outline: 20px solid #161616;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 /* Body */
