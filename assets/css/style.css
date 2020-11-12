@@ -26,8 +26,9 @@ a:active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: vgasys;
+    font-family: ok;
     font-weight: bold;
+    word-spacing: 15px;
 }
 
 p {
@@ -88,12 +89,6 @@ p {
 @font-face {
     font-family: ok;
     src: url(../../assets/fonts/ok.ttf);
-}
-
-/* Header font "" */
-@font-face {
-    font-family: vgasys;
-    src: url(../../assets/fonts/vgasys.otf);
 }
 
 /* OTHER */
