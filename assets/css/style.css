@@ -42,6 +42,7 @@ p {
 
 /* Navigation Bar */
 .nav-link {
+    font-family: ok;
     padding: 1.5vh;
     text-decoration: none;
     font-size: 32px;
@@ -74,5 +75,11 @@ p {
 /* IDS */
 
 /* FONTS */
+
+/* Header font "ok" */
+@font-face {
+    font-family: ok;
+    src: url(../../assets/fonts/ok.ttf);
+}
 
 /* OTHER */
