@@ -53,7 +53,6 @@ p {
     word-spacing: 15px;
     transition: 0.5s;
     -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
 }
 
 .nav-link:hover {
