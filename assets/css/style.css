@@ -132,6 +132,12 @@ p {
     width: 100%;
 }
 
+/* Displayed Videos */
+.video {
+    width: 100%;
+    height: 56%;
+}
+
 /* Body */
 .wrapper {
     visibility: visible;
