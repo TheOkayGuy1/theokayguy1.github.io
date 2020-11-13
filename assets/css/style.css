@@ -97,7 +97,6 @@ p {
 .display-box {
     width: 28vw;
     height: 28vw;
-    border: 2px solid white;
     clip-path: border-box;
     float: left;
     margin: 1.5%;
@@ -106,7 +105,6 @@ p {
 .mini-display-box {
     width: 45%;
     height: 45%;
-    border: 2px solid red;
     clip-path: border-box;
     float: left;
     margin: 1.8%;
