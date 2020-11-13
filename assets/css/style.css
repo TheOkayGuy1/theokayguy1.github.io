@@ -107,7 +107,21 @@ p {
     height: 45%;
     clip-path: border-box;
     float: left;
-    margin: 1.8%;
+    margin: 1.8%;   
+}
+
+.db {
+    transition: 0.5s;
+}
+.db:hover {
+    opacity: 0.5;
+}
+
+.db-small {
+    transition: 0.5s;
+}
+.db-small:hover {
+    opacity: 0.5;
 }
 
 /* Body */
