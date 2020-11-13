@@ -132,6 +132,10 @@ p {
     width: 100%;
 }
 
+#pnf-image {
+    width: 25%;
+}
+
 /* Displayed Videos */
 .video {
     width: 100%;
