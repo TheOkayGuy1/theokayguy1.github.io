@@ -136,6 +136,10 @@ p {
     width: 25%;
 }
 
+.portfolio-image-page {
+    width: 50vw
+}
+
 /* Displayed Videos */
 .video {
     width: 100%;
