@@ -1,8 +1,8 @@
 /* GENERAL SELECTORS  */
 
 body {
-    color: #ffffff;
-    background-color: #161616;
+    color: #dde9ec;
+    background-color: #1f242d;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -10,19 +10,19 @@ body {
 }
 
 a:link {
-    color: #ffffff;
+    color: #dde9ec;
 }
 
 a:visited {
-    color: #ffffff;
+    color: #dde9ec;
 }
 
 a:hover {
-    color: #ffffff;
+    color: #dde9ec;
 }
 
 a:active {
-    color: #ffffff;
+    color: #dde9ec;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,7 +43,7 @@ p {
 
 /* Navigation Bar */
 .nav-link:link {
-    color:#292929;
+    color:#1f242d;
     font-family: ok;
     padding: 1.5vh;
     padding-top: 20px;
@@ -56,26 +56,26 @@ p {
 }
 
 .nav-link:hover {
-    color: #414141;
+    color: #282d36;
 }
 
 .nav-link:visited {
-    color: #292929;
+    color: #1f242d;
 }
 
 .nav-link:active {
-    color: #414141;
+    color: #282d36;
 }
 
 .logo-box {
-    background-color: #ffffff;
+    background-color: #dde9ec;
     width: 100%;
     height: 160px;
     margin-top: 20px;
     margin-bottom: 30px;
-    border-top: 20px solid #1e1e1e;
-    border-bottom: 20px solid #1e1e1e;
-    outline: 20px solid #161616;
+    border-top: 20px solid #495663;
+    border-bottom: 20px solid #495663;
+    outline: 20px solid #313945;
 }
 
 .logo {
