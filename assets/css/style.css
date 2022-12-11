@@ -92,41 +92,6 @@ p {
     margin: 0 auto;
 }
 
-/* Portfolio Display Boxes */
-.display-box {
-    width: 28vw;
-    height: 28vw;
-    clip-path: border-box;
-    float: left;
-    margin: 1.5%;
-}
-
-.mini-display-box {
-    width: 45%;
-    height: 45%;
-    clip-path: border-box;
-    float: left;
-    margin: 1.8%;   
-}
-
-.display-video {
-    margin-top: 80px;
-}
-
-.db {
-    transition: 0.5s;
-}
-.db:hover {
-    opacity: 0.5;
-}
-
-.db-small {
-    transition: 0.5s;
-}
-.db-small:hover {
-    opacity: 0.5;
-}
-
 /* Displayed Images */
 .image {
     width: 100%;
@@ -140,15 +105,10 @@ p {
     width: 50vw
 }
 
-/* Displayed Videos */
-.video {
-    width: 100%;
-    height: 56%;
-}
-
 /* Body */
 .wrapper {
-    visibility: visible;
+    /* !!! IMPORTANT !!! */
+    visibility: visible !important;
 }
 
 /*----IDS----*/
@@ -163,15 +123,18 @@ p {
 
 /*----RWD----*/
 
+#L {
+    visibility: hidden;
+}
+
 /* Smaller Portfolio Page (Mobile) */
 @media screen and (max-width: 481px) {
-    .display-box {
-        width: 80vw;
-        height: 80vw;
-        margin: 0 auto;
-        margin-top: 20px;
-        margin-left: 9vw;
-        float: none;
+    * {
+        visibility: hidden;
+    }
+
+    #L {
+        visibility: visible;
     }
 }
 
