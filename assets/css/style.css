@@ -1,4 +1,4 @@
-/* GENERAL SELECTORS  */
+/*----GENERAL SELECTORS----*/
 
 body {
     color: #dde9ec;
@@ -39,7 +39,7 @@ p {
     padding-right: 10%;
 }
 
-/* CLASSES */
+/*----CLASSES----*/
 
 /* Navigation Bar */
 .nav-link:link {
@@ -151,9 +151,9 @@ p {
     visibility: visible;
 }
 
-/* IDS */
+/*----IDS----*/
 
-/* FONTS */
+/*----FONTS----*/
 
 /* Header font "ok" */
 @font-face {
@@ -161,7 +161,7 @@ p {
     src: url(../../assets/fonts/ok.ttf);
 }
 
-/* RWD */
+/*----RWD----*/
 
 /* Smaller Portfolio Page (Mobile) */
 @media screen and (max-width: 481px) {
@@ -176,4 +176,4 @@ p {
 }
 
 
-/* OTHER */
+/*----OTHER----*/
