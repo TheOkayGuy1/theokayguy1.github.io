@@ -9,7 +9,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-a:link {
+/* a:link {
     color: #dde9ec;
 }
 
@@ -23,7 +23,7 @@ a:hover {
 
 a:active {
     color: #dde9ec;
-}
+} */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: ok;
@@ -39,38 +39,21 @@ p {
     padding-right: 10%;
 }
 
-/*----CLASSES----*/
-
-/* Navigation Bar */
-.nav-link:link {
-    color:#3a3c41;
-    font-family: ok;
-    padding: 1.5vh;
-    padding-top: 20px;
-    text-decoration: none;
-    font-size: 32px;
-    font-weight: bold;
-    word-spacing: 15px;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
+footer {
+    padding: 20px;
+    color: #495663;
 }
 
-.nav-link:hover {
-    color: #282d36;
+footer > a {
+    color: #495663;
 }
 
-.nav-link:visited {
-    color: #1f242d;
-}
-
-.nav-link:active {
-    color: #282d36;
-}
+/*----CLASSES AND IDS----*/
 
 .logo-box {
     background-color: #dde9ec;
     width: 100%;
-    height: 160px;
+    height: 150px;
     margin-top: 20px;
     margin-bottom: 30px;
     border-top: 20px solid #495663;
@@ -82,60 +65,62 @@ p {
     display: block;
     margin: auto;
     display: inline-block;
-    height: 50%;
+    height: 80%;
     padding: 15px;
 }
 
 /* Portfolio Grid Container */
-.portfolio-grid-container {
+.portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(31, 1fr);
     width: 85%;
     margin: 0 auto;
     gap: 20px;
 }
 
-/* Portfolio Grid Thumbnail Images */
+/* Portfolio Grid Thumbnails */
 .thumbnail {
-    filter: grayscale(100%);
+    filter: grayscale(100%) brightness(60%);
     transition: 0.5s;
     margin: 0;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 .thumbnail:hover {
-    filter: grayscale(0%);
+    filter: grayscale(0%) brightness(100%);
 }
 
 /* Portfolio Grid Items */
 
-#grid-item-1 {
+#piece-1 {
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 10;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 7;
     padding: 0;
 }
 
-#grid-item-2 {
+#piece-2 {
     grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-row-end: 10;
+    grid-column-start: 7;
+    grid-column-end: 23;
 }
 
-#grid-item-3 {
-    grid-column-start: 3;
-    grid-column-end: 4;
+#piece-3 {
+    grid-row-start: 1;
+    grid-row-end: 10;
+    grid-column-start: 23;
+    grid-column-end: 32;
 }
 
-#four-oh-four-image {
-    width: 25%;
-}
-
-.portfolio-image-page {
-    width: 50vw
+#piece-4 {
+    grid-row-start: 10;
+    grid-row-end: 19;
+    grid-column-start: 1;
+    grid-column-end: 10;
 }
 
 /* Body */
@@ -144,7 +129,50 @@ p {
     visibility: visible !important;
 }
 
-/*----IDS----*/
+/* Overlay Shenaniganery */
+#overlay {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 100%;}
+}
+
+.piece-details {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    text-align: left;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+}
+
+.piece-details > img {
+    height: 70vh;
+}
+
+.piece-details > p {
+    margin: 10px;
+    padding: 0;
+    padding-left: 7px;
+}
+
+#four-oh-four-image {
+    width: 25%;
+}
 
 /*----FONTS----*/
 
@@ -156,20 +184,17 @@ p {
 
 /*----RWD----*/
 
-#L {
-    visibility: hidden;
+.L {
+    display: none
 }
 
 /* Smaller Portfolio Page (Mobile) */
 @media screen and (max-width: 481px) {
     * {
-        visibility: hidden;
+        display: none
     }
 
-    #L {
-        visibility: visible;
+    .L {
+        display: block;
     }
 }
-
-
-/*----OTHER----*/

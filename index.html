@@ -2,42 +2,74 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="TheOkayGuy's official portfolio">
-  <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - TheOkayGuy</title>
-  <link href="assets/css/style.css" rel="stylesheet " type="text/css">
-  <link href="assets/images/justoksmaller.ico" rel="shortcut icon" type="image/icon">
+    <meta charset="utf-8">
+    <meta name="description" content="TheOkayGuy's official portfolio">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - TheOkayGuy</title>
+    <link href="assets/css/style.css" rel="stylesheet " type="text/css">
+    <link href="assets/images/justoksmaller.ico" rel="shortcut icon" type="image/icon">
+    <script src="assets/js/index.js"></script>
 </head>
 
 <body>
-  <p id="L">L mobile user</p>
-
-  <div class="logo-box">
-    <a href="/">
-      <img src="assets/images/supajustok.png" class="logo" alt="TheOkayGuy Logo">
-    </a>
-    <br>
-    <a href="/" class="nav-link">Home</a>
-    <a href="portfolio" class="nav-link">Portfolio</a>
-  </div>
-  <div class="wrapper">
-    <h1>About Me</h1>
-    <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna
-      aliqua. Etiam sit amet nisl purus. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit
-      scelerisque.
-      Placerat vestibulum lectus mauris ultrices eros in cursus turpis. Elementum tempus egestas sed sed risus pretium
-      quam.
-      Ullamcorper malesuada proin libero nunc consequat interdum varius sit amet. In iaculis nunc sed augue lacus
-      viverra
-      vitae congue eu. Nullam vehicula ipsum a arcu cursus vitae. Velit dignissim sodales ut eu sem integer. Amet
-      commodo
-      nulla facilisi nullam vehicula ipsum a arcu cursus. Mauris pellentesque pulvinar pellentesque habitant morbi
-      tristique
-      senectus et netus. Tempor id eu nisl nunc mi. Eget lorem dolor sed viverra ipsum nunc aliquet.</p>
-  </div>
+    <div id="overlay" onclick="overlayOff()"></div>
+    <p class="L">L mobile user</p>
+    <div class="logo-box">
+        <a href="/">
+            <img src="assets/images/supajustok.png" class="logo" alt="TheOkayGuy Logo">
+        </a>
+    </div>
+    <div class="wrapper">
+        <br>
+        <div class="portfolio-grid">
+            <div id="piece-1">
+                <img src="assets/art/HouseThumbnail.png" alt="Thumbnail of piece 'House'" height="250px" class="thumbnail" onclick="overlayOn('details-1')">
+                <div id="details-1" class="piece-details">
+                    <img src="assets/art/House.png" alt="Piece 'House'">
+                    <p>
+                        House
+                        <br>
+                        November 27th, 2022
+                    </p>
+                </div>
+            </div>
+            <div id="piece-2">
+                <img src="assets/art/HomeThumbnail.png" alt="Thumbnail of piece 'Home'" class="thumbnail" onclick="overlayOn('details-2')">
+                <div id="details-2" class="piece-details">
+                    <img src="assets/art/Home.png" alt="Piece 'Home'">
+                    <p>
+                        Home
+                        <br>
+                        December 9th, 2022
+                    </p>
+                </div>
+            </div>
+            <div id="piece-3">
+                <img src="assets/art/VenusThumbnail.png" alt="Thumbnail of piece 'Venus'" class="thumbnail" onclick="overlayOn('details-3')">
+                <div id="details-3" class="piece-details">
+                    <img src="assets/art/Venus.png" alt="Piece 'Venus'">
+                    <p>
+                        Venus
+                        <br>
+                        October 27th, 2022
+                    </p>
+                </div>
+            </div>
+            <div id="piece-4">
+                <img src="assets/art/MercuryThumbnail.png" alt="Thumbnail of piece 'Mercury'" class="thumbnail" onclick="overlayOn('details-4')">
+                <div id="details-4" class="piece-details">
+                    <img src="assets/art/Mercury.png" alt="Piece 'Mercury'">
+                    <p>
+                        Mercury
+                        <br>
+                        ???
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>Site by <a href="https://liamp.dev">Liam Preisser</a></footer>
 </body>
 
 </html>
